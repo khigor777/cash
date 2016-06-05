@@ -1,0 +1,279 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+ body{
+    background: #ffffff;    
+ }
+
+ .about_tovar{
+    width: 620px;
+    margin-top: 40px;
+    margin-left: 25px;
+
+    .ttl{
+        color: #1e78b0;
+        font-size: 32px;
+        .open_sans;        
+    }  
+
+    .price_block{
+        margin-top: 34px;
+        padding: 15px 15px 26px;
+        border: 1px solid #c7c7c7;
+        background: #f4f4f4;
+
+        .width_bl{
+            width: 247px;    
+        }
+        .price{
+            margin-top: 15px;
+            color: #ffab4a;
+            font-size: 32px;
+            .open_sans;    
+        }  
+        .cite{
+            margin-top: 23px;
+            color: #000000;
+            font-size: 14px;
+            .open_sans;    
+
+            a{
+                color: #ff8900;
+                text-decoration: none;    
+            }
+        }  
+        .image{
+            position: relative;
+            width: 71px;
+            height: 71px;
+            border: 1px solid #dcdcdc;
+            background: #ffffff;
+            .get_border_radius(50%);
+            
+            img{
+                position: absolute;
+                max-width: 64px;
+                max-height: 64px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;    
+            }    
+        }
+        hr{
+            height: 1px;
+            margin: 20px 0;
+            border: none;
+            background: #dadada;    
+        }
+        .proc{
+            margin-top: 17px;
+            color: #7cb44d;  
+            font-size: 26px;  
+            .open_sans;
+        }
+        .pay_bl{
+            width: 340px;
+            padding-bottom: 35px;
+            color: #000000;
+            font-size: 14px;
+            background: url(../img/tovarbg.png) no-repeat 0 100%;    
+            .open_sans;
+
+            .small{
+                display: inline-block;
+                font-size: 12px;    
+                line-height: 1.2;
+            }
+        }
+        .line{
+            height: 2px;
+            margin: 20px 0;
+            background: url(../img/register_hearer_back.png) repeat-x 0 0;
+        }
+        .final_price{
+            .pr{
+                color: #7cb44d; 
+                font-size: 38px; 
+                .open_sans_bold; 
+            } 
+            .txt{
+                color: #000000;
+                font-size: 14px;
+                .open_sans;    
+            }
+        }
+        .btn{
+            display: block;
+            margin-top: 10px;
+            padding: 0 50px;
+            line-height: 53px; 
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;           
+            background: #5AB542;  
+            .cut;
+
+            span{
+                display: inline-block;
+                color: #ffffff;   
+                font-size: 24px;
+                .recut; 
+                .open_sans_bold;
+            }  
+        }
+    }
+
+    .dscr{
+        margin-top: 26px;
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.4;
+        .open_sans;    
+    }
+    .pon_price{
+        margin: 30px 0;
+        padding-left: 24px;
+        color: #1e78b0;
+        font-size: 15px;
+        line-height: 20px;
+        cursor: pointer;
+        background: url(../img/pricedown.png) no-repeat 0 0;
+
+        .txt{
+            text-decoration: underline;
+        }
+
+        input[type="checkbox"]{
+            margin-top: 5px;
+            margin-left: 4px;    
+        }
+    }
+}
+ .image_tovar{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 64px;
+    
+    .reting{
+        color: #000000;
+        font-size: 14px;
+        .open_sans;    
+    }
+    .image{
+        position: relative;
+        display: block;
+        width: 298px;
+        text-align: center;
+        border: 1px solid #c3c3c4;
+
+        img{            
+            max-width: 298px;    
+        }
+    } 
+    .txt{
+        margin-top: 20px;    
+    }       
+ }
+ .show_also{
+    margin-left: 25px;
+    color: #000000;
+    font-size: 32px;    
+    .open_sans_bold;
+ }
+
+ .tovary{
+    margin: 30px 20px 0;
+    list-style: none;
+    overflow: hidden;
+
+    li{
+        position: relative;
+        float: left; 
+        margin-right: 74px;
+        overflow: hidden;
+
+        a{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;                
+            text-decoration: none;
+            z-index: 10;
+        }                
+                
+        .image{
+            position: relative;
+            width: 190px;
+            height: 190px;
+            border: 1px solid #bcbcbc;
+
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;  
+                max-width: 190px;
+                max-height: 190px;  
+                z-index: 1;
+            }
+        }  
+        .ttl{
+            width: 192px;
+            height: 40px;
+            color: #000000;
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.4;
+            .open_sans_bold;     
+        } 
+        .price{
+            position: relative;
+            width: 184px;
+            height: 30px;
+            margin-top: 8px;
+            margin-left: 3px;
+            color: #5AB542;
+            line-height: 30px;                
+            .cut;  
+                    
+            .pr{
+                width: 182px;
+                height: 28px;
+                color: #7cb44d;
+                font-size: 14px;
+                text-align: center;  
+                border: 1px solid #5AB542;                  
+                .open_sans_bold; 
+                                       
+                .ld_pr{
+                    .recut;   
+                }
+            }  
+        } 
+        &:nth-child(4n){ margin-right: 0; }            
+    }  
+} 
+.show_more_tovar{
+    line-height: 80px;
+    background: #F0F0F0;
+
+    .lnk{
+        margin-left: 25px;
+        color: #1e78b0;    
+        font-size: 15px;
+        .open_sans;
+    }    
+}
+
+.blue_line{
+    height: 50px;
+    margin-top: 80px;
+    background: #0079B3;
+    .bending;    
+}

@@ -1,0 +1,542 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.register_header{
+    margin-bottom: 0;    
+}
+.tovary_head{    
+    height: 345px;
+    background: #ffffff;
+    .wrapper{
+        width: 1000px;
+        height: 345px;
+        background: url(../img/tovary/trootheader.png) no-repeat 0 0;
+
+        .tov_ttl,
+        .tov_ttl_or,
+        .tov_ttl_blue{
+            width: 530px;
+            font-size: 18px;
+            line-height: 1.15;
+            .open_sans_bold
+        }
+        .tov_ttl{ color: #000000; }
+        .tov_ttl_upp{ text-transform: uppercase; }
+        .tov_ttl_or{ 
+            color: #ff8900; 
+            text-transform: uppercase;
+        }
+        .tov_ttl_blue{ 
+            color: #1e78b0;
+            text-transform: uppercase;
+        }
+        .tov_ttl_ind{ margin-top: 25px; }
+    }
+}
+.tovary_block{
+    position: relative;
+    padding-bottom: 40px;
+    background: #0079B3; 
+      
+    &:before{
+        position: absolute;
+        bottom: -17%;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        content: '';
+        background: #0079B3;
+        .bending;
+    }     
+}
+.tovary_list{
+    margin-left: 20px;
+    list-style: none;
+    overflow: hidden;
+
+    li{
+        float: left;
+        margin-top: 80px;
+        margin-left: 10px;
+        .lnk{
+            display: block;  
+            width: 320px;  
+            .image{
+                position: relative;
+                width: 109px;
+                height: 109px;
+                border: 4px solid #ffffff;  
+                .get_border_radius(50%);
+
+                img{ 
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    max-width: 109px;
+                    max-height: 109px;
+                    margin: auto;                    
+                } 
+            }   
+            .ttl{
+                display: table;        
+                height: 117px; 
+                                   
+                .txt{
+                    display: table-cell;
+                    width: 190px;
+                    padding-left: 10px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-size: 27px;                
+                    line-height: 1.2;
+                    vertical-align: middle;
+                    .cond_b;
+                    .cut;
+                }
+            }
+
+            &:hover{
+                .image{ background-color: #ff8900; }
+                .txt{ color: #ff8900; }                
+            }
+        }
+    }  
+}
+.main_page_title{
+    font-size: 30px;
+    margin-top: 40px;
+}
+.category_list{
+    margin-top: 30px;    
+
+    a{
+        font-size: 15px;  
+        .count{
+            color: #758189;    
+        }               
+    }
+}
+.brand_list_ch{
+    margin-top: 40px;
+    list-style: none;
+
+    li{ 
+        margin-bottom: 14px;
+         
+        label{
+            position: relative;
+            display: inline-block;
+            padding-left: 40px;
+            color: #000000;
+            font-size: 15px;
+            line-height: 30px; 
+            cursor: pointer;
+            .open_sans;  
+        
+            input[type="checkbox"]{
+                position: absolute;
+                top: 5px;
+                left: 2px;
+                z-index: 1;
+            }
+            .sub{
+                position: absolute;
+                display: block;            
+                top: 0;
+                left: 0;
+                width: 28px;
+                height: 28px;
+                float: left;
+                border: 1px solid #c4c4c4;
+                background: #ffffff;  
+                z-index: 2;  
+            }   
+        }
+    } 
+    .active{
+        .sub{
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: url(../img/tovary/brandactive.png) no-repeat 0 0;
+        }
+    }
+}
+.brand_list_more {
+    display: inline-block;
+    padding-left: 25px;
+    color: #646464;
+    font-size: 20px;
+    text-decoration: none;
+    background: url(../img/arrow_black.png) no-repeat 0 55%;
+
+    span {
+        display: inline-block;
+        color: #646464;
+        font-size: 17px;
+        line-height: 1.2;
+        background: url(../img/dotted.png) repeat-x 0 100%;
+        .open_sans;
+        .cut;
+
+    }
+}
+.tovary_info{
+    width: 677px;
+    margin-top: 30px;
+    background: #ffffff; 
+
+    .tovary_ctgr_list{
+        list-style: none;
+        overflow: hidden;  
+        
+        >li{
+            margin: 44px 90px 0 30px;
+            float: left;  
+
+            .image{
+                display: block;
+                position: relative;
+                width: 242px;
+                height: 186px;
+                border: 1px solid #c3c3c4;   
+        
+                img{
+                    position: absolute;
+                    max-width: 242px;
+                    max-height: 186px; 
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto; 
+                } 
+            } 
+            .ttl{
+                display: inline-block;
+                margin: 8px 0;
+                color: #2a2f33;
+                font-size: 15px;
+                text-transform: uppercase;
+                .open_sans_bold;    
+            }
+            ul{
+                list-style: none;
+
+                a{
+                    color: #216895;
+                    font-size: 15px;
+                    .open_sans;  
+                    
+                    &:hover{
+                        color: #000000;
+                        text-decoration: underline;    
+                    }  
+                }     
+            }
+             
+            &:nth-child(2n){
+                margin-right: 30px;
+            }
+        }  
+    }  
+    .filter_tag{
+        margin: 30px 20px 0;
+        padding: 5px;
+        color: #000000;
+        font-size: 16px;
+        border: 1px solid #bcbcbc;
+        .open_sans;
+
+        .list{
+            max-width: 560px;
+            list-style: none;
+
+            li{
+                float: left;
+                margin-left: 15px;   
+                color: #216895; 
+
+                .close{
+                    display: inline-block;
+                    margin-left: 4px;
+                    color: #5f5f5f;
+                    font-size: 22px;
+                    line-height: 1;
+                    cursor: pointer;
+                    .open_sans_bold;    
+                }
+            }    
+        }
+    } 
+
+    .line_filter{
+        display: table;
+        width: 600px;
+        margin: 50px auto 0;
+        list-style: none;
+
+        li{
+            display: table-cell;
+            text-align: center;
+
+            a{
+                color: #216895;
+                font-size: 15px; 
+                text-decoration: none;
+                .open_sans;   
+            }
+            .active{ text-decoration: underline; }
+        }    
+    }
+    .tovary{
+        margin: 30px 20px 0;
+        list-style: none;
+        overflow: hidden;
+
+        li{
+            position: relative;
+            float: left; 
+            margin-right: 28px;
+            margin-bottom: 80px;
+            overflow: hidden;
+
+            a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: block;                
+                text-decoration: none;
+                z-index: 10;
+            }                
+                
+            .image{
+                position: relative;
+                width: 190px;
+                height: 190px;
+                border: 1px solid #bcbcbc;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;  
+                    max-width: 190px;
+                    max-height: 190px;  
+                    z-index: 1;
+                }
+            }  
+            .ttl{
+                width: 192px;
+                height: 40px;
+                color: #000000;
+                font-size: 14px;
+                text-align: center;
+                line-height: 1.4;
+                .open_sans_bold;     
+            } 
+            .price{
+                position: relative;
+                width: 184px;
+                height: 30px;
+                margin-top: 8px;
+                margin-left: 3px;
+                color: #5AB542;
+                line-height: 30px;                
+                .cut;  
+                    
+                .pr{
+                    width: 182px;
+                    height: 28px;
+                    color: #7cb44d;
+                    font-size: 14px;
+                    text-align: center;  
+                    border: 1px solid #5AB542;                  
+                    .open_sans_bold; 
+                                       
+                    .ld_pr{
+                        .recut;   
+                    }
+                }  
+                .new_pr{
+                    position: absolute;
+                    top: 0;
+                    left: -110%;
+                    width: 100%;
+                    height: 30px;
+                    color: #ffffff;
+                    text-align: center;                    
+                    line-height: 30px;
+                    background: #5AB542;
+                    .animate_1second;  
+
+                    .proc{
+                         width: 90px;
+                         font-size: 12px;
+                         background: url(../img/tovary/new_price.png) no-repeat 100% 0;
+                         .open_sans;  
+                         .recut; 
+                    }
+                    .n_pr{
+                        width: 90px;
+                        font-size: 14px;
+                        .open_sans_bold; 
+                        .recut;   
+                    }
+                }
+            }   
+                                
+            &:nth-child(3n){ margin-right: 0; }  
+            &:hover{
+                .new_pr{  
+                    left: 0;    
+                }
+            }
+        }  
+    } 
+
+    .page_list{             
+        padding-bottom: 20px;
+
+        ul{
+            display: table; 
+            width: auto;
+            margin: 0 auto 20px;
+
+            li{
+                display: table-cell;
+                padding: 0 5px;
+                text-align: center;           
+            
+                a{
+                    color: #000000;
+                    font-size: 18px;
+                    text-decoration: none;
+                    .open_sans;   
+                }  
+
+                .active{
+                    color: #1e78b0;
+                    .open_sans_bold;
+                }
+            }  
+        }        
+    }
+}
+
+.back_modal {
+    background: none;
+
+    .modal_window {
+        width: 650px;
+        height: 620px;
+        border: 1px solid #c3c3c4;
+
+        .add_block {
+            padding: 0;
+
+            .close {
+                top: -9px;
+            }
+        }
+
+        .brand_alfbt {
+            margin: 20px 20px 0;
+            list-style: none;
+            overflow: hidden;
+
+            li {
+                float: left;
+                margin: 0 6px;
+
+                a {
+                    color: #1E78B0;
+                    font-size: 17px;
+                    text-decoration: none;
+                    .open_sans;
+                }
+            }
+        }
+
+        .brand_alfbt_block {
+            position: relative;
+            height: 480px;
+            overflow-y: auto;
+            margin-top: 50px;
+            margin-left: 20px;
+
+            .smbl {
+                color: #1E78B0;
+                font-size: 30px;
+                float: left;
+                .open_sans;
+            }
+
+            .list {
+                width: 570px;
+                margin-left: 10px;
+                margin-bottom: 50px;
+                list-style: none;
+                overflow: hidden;
+
+                li {
+                    width: 180px;
+                    float: left;
+                    margin: 5px 0 20px 10px;
+                    text-align: left;
+
+                    a {
+                        color: #464646;
+                        font-size: 15px;
+                        text-decoration: none;
+                        .open_sans;
+                    }
+
+                    .active {
+                        .open_sans_bold;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+.srch_count {
+    position: absolute;
+    padding: 0 10px;
+    line-height: 42px;
+    border: 1px solid #c3c3c4;
+    background: #ffffff;
+    z-index: 1000;
+
+    .count,
+    .txt {
+        display: inline-block;
+        font-size: 14px;
+        .open_sans;
+    }
+
+    .count {
+        margin-left: 5px;
+        color: #ed5500;
+    }
+
+    .txt {
+        color: #444444;
+    }
+
+    .show {
+        display: inline-block;
+        margin-left: 5px;
+        color: #216895;
+        font-size: 16px;
+        text-decoration: none;
+        .open_sans_bold;
+    }
+}

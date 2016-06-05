@@ -1,0 +1,89 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.title_resp{
+    margin: 56px 0 42px 40px;
+    color: #464646;
+    font-size: 27px;
+    .cond_b;
+    .cut;
+
+    .blue{ color: #1e78b0; }
+}
+.descr_resp{
+    margin-left: 40px;
+    color: #464646;
+    font-size: 16px;
+    line-height: 1.6;
+    .cond_b;
+    .blue{ color: #1e78b0; }
+}
+.list_resp{
+    margin-bottom: 40px;
+    .item{  margin-top: 45px; }
+    .image{
+        display: block;
+        width: 104px;
+        height: 104px;
+        text-transform: none;
+        border: 8px solid #ffffff;
+        .get_border_radius(50%);
+        .animate_1second;
+
+        img{
+            max-width: 104px;
+            max-height: 104px;
+            .get_border_radius(50%);
+        }
+         &:hover{
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+    }   
+    .info{
+        width: 825px;
+        margin-top: 7px;
+        margin-left: 30px;
+        .name{
+            color: #2a2f33;
+            font-size: 15px;
+            text-transform: uppercase;
+            .open_sans_bold;
+        }
+        .city{
+            margin-left: 10px;
+            color: #737373;
+            font-size: 15px;
+            .open_sans;    
+        }  
+        .post{
+            margin-left: 10px;
+            color: #737373;
+            font-size: 15px;
+            .open_sans;    
+        }       
+        .text{
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: #2e3f49;
+            font-family: Arial;
+            line-height: 1.2;    
+            ol, ul{                
+                margin-top: 1em;
+                margin-bottom: 1em;
+                padding-left: 40px;
+            } 
+            ul{ list-style-type: disc; }
+        }
+        .full_resp, .orgn_resp{
+            display: inline-block;
+            color: #54a90e;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .orgn_resp { margin-bottom: 18px }
+        .full_resp{ font-style: italic; }
+    }
+}

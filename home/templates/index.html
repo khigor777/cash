@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load side_text_editor %}
+
+
+{% block title %}
+    Aliexpress
+{% endblock %}
+ {% block javascript %}
+
+     <script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
+ {% endblock %}
+
+ {% block css %}
+
+ {% endblock %}
+
+
+{% block content %}
+
+            <div class="wrapper">
+                <div class="column_left indent_left_20 left">
+                    <a href="http://www.lamoda.ru/" target="_blank" class="store_web left">www.lamoda.ru</a>
+                    <span class="set_favorite left"></span>
+                    <div class="clear"></div>
+                    <a href="" class="store_logo" target="_blank">
+                        <img src="http://cash4brands.ru/media/offers/lamoda-cashback.jpg" />
+                        <span class="tite">кэшбэк 5%</span>
+                    </a>
+                    <div class="store_info left">
+                        Посоветуйте друзьям скидку<br />5% в <a href="" class="lnk">Lamoda</a>
+                    </div>
+                    <div class="clear"></div>
+                    <table cellpadding="0" cellspacing="0" border="0" class="store_recomend">
+                        <thead>
+                            <tr>
+                                <th class="text_left">Похожие магазины</th>
+                                <th width="1%" class="text_right">Кэшбэк</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text_left tite"><a href="">Asos</a></td>
+                                <td width="1%" class="text_right sale">4%-8%</td>
+                            </tr>
+                            <tr>
+                                <td class="text_left tite"><a href="">Victoria's Secret</a></td>
+                                <td width="1%" class="text_right sale">5%</td>
+                            </tr>
+                            <tr>
+                                <td class="text_left tite"><a href="">LAWINE</a></td>
+                                <td width="1%" class="text_right sale">5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="" class="store_more">Больше магазинов&gt;</a>
+                    <div class="store_descr">
+<p>
+                        {% show_editor 'index_page_left_first' %}
+                  </p>
+<p>
+                        {% show_editor 'index_page_left_second' %}
+</p>
+                    </div>
+                </div>
+                <div class="left column_right">
+                    <h1 class="store_title">Промокоды Ламода + скидка 5% на все заказы</h1>
+                    <div class="store_title_midle">МЫ ДАЕМ КЭШБЭК 5% НА ЛЮБУЮ ПОКУПКУ В МАГАЗИНЕ <a href="" target="_blank">LAMODA.RU</a> !</div>
+                    <div class="btn_panel clearfix">
+                        <a href="" class="btn_hover left store_info_lnk green">
+                            <span class="green"></span>
+                            <span class="orange"></span>
+                            <span class="txt">Перейти в магазин и получить скидку ></span>
+                        </a>
+                        <a href="" class="left store_info_lnk orange">Промокоды ></a>
+                        <a href="" class="left store_info_lnk blue">Отзывы ></a>
+                    </div>
+                    <div class="store_about">
+                        <p>Конкурс! <a href="">Мы раздаем</a> 5 000 рублей на шоппинг!:)</p>
+                        <p>Ищите промокоды, купоны и скидки в Ламоде? Они все у нас, в одном месте! Также, помимо всех акции в этом замечательном интернет-магазине, мы даем кэшбэк 5% на покупку.</p>
+                        <p><b>Обратите, пожалуйста, внимание, что максимальная выплата за покупку совершенную по купону, составляет 2%.</b></p>
+                        <div class="how_work clearfix">
+                            <div class="txt left">Как это работает</div>
+                            <a href="" class="btn_hover btn right">
+                                <span class="green"></span>
+                                <span class="orange"></span>
+                                <span class="txt">Перейти в магазин и получить скидку ></span>
+                            </a>
+                        </div>
+                        <div class="step_work clearfix">
+                            <div class="item step_1 left">
+                                <div class="image"></div>
+                                <div class="title">Нажмите кнопку «Перейти в магазин и получите скидку»</div>
+                            </div>
+                            <div class="item step_2 left">
+                                <div class="image"></div>
+                                <div class="title">Перейдите в Интернет-магазин и закажите товар так, как вы делаете это обычно</div>
+                            </div>
+                            <div class="item step_3 left">
+                                <div class="image"></div>
+                                <div class="title">После заказа скидка автоматически поступит на ваш аккаунт cash4brands.ru</div>
+                            </div>
+                        </div>
+                        <div class="pay_panel">
+                            <div class="title">ПОЛУЧИТЕ ОБРАТНО ДЕНЬГИ<br />ЛЮБЫМ УДОБНЫМ ДЛЯ ВАС СПОСОБОМ</div>
+                            <ul class="pay_list">
+                                <li class="phone"><a href="" target="_blank">На телефон</a></li>
+                                <li class="webmoney"><a href="" target="_blank">Webmoney</a></li>
+                                <li class="qiwi"><a href="" target="_blank">Qiwi</a></li>
+                                <li class="yandex"><a href="" target="_blank">Яндекс Деньги</a></li>
+                                <li class="master"><a href="" target="_blank">MasterCard</a></li>
+                                <li class="visa"><a href="" target="_blank">Visa</a></li>
+                                <li class="paypal"><a href="" target="_blank">PayPal</a></li>
+                            </ul>
+                        </div>
+                        <div class="list_rule">
+                            <div class="item">
+                                <div class="title clearfix">
+                                    <div class="txt left">ВАЖНО, КЭШБЭК БУДЕТ НАЧИСЛЕН, ЕСЛИ..</div>
+                                    <div class="btn right">развернуть правила <span>></span></div>
+                                </div>
+                                <div class="text">
+                                    <div class="wrap">
+                                        <div class="close">Свернуть</div>
+                                        Важно. Кэшбэк будет начислен, если:<br />
+                                        1) Вы переходите на сайт магазина с cash4brands.ru перед каждой Вашей покупкой.<br />
+                                        2) Вы добавляете товар в корзину интернет-магазина только после перехода с <a href="http://cash4brands.ru/">cash4brands.ru</a>.<br />
+                                        3) Вы не используете сторонние купоны и промокоды.<br />
+                                        4) Для корректной передачи данных отключите программы блокировки рекламы, такие как Adblock. Они блокируют передачу данных о Ваших кликах из cash4brands.ru в систему магазинов.<br />
+                                        5) Если вдруг Вы увидели, что множество Ваших покупок не фиксируются в нашей системе, убедительно рекомендуем Вам чистить Cookies в настройках Вашего браузера, но, перед этим закрыв в браузере все вкладки, а затем переходить на наш сервис <a href="http://cash4brands.ru/">cash4brands.ru</a> и совершать покупки.<br />
+                                        6) У Вас установлены сторонние браузерные расширения, такие как: Aliexpress Tools, friGate CDN и некоторые другие. Они подменяют партнерскую ссылку на свою и следовательно, не блокируют передачу данных о Вашей покупки, как сделанной через наш сервис. Пожалуйста, удостоверьтесь, что браузерные расширение не установлены в том браузере, через который Вы делаете покупки.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title clearfix">
+                                    <div class="txt left">НЕ ПОЛУЧИЛИ КЭШБЭК? НАПИШИТЕ НАМ!</div>
+                                    <div class="btn right">Что делать <span>></span></div>
+                                </div>
+                                <div class="text">
+                                    <div class="wrap">
+                                        <div class="close">Свернуть</div>
+                                        Дорогие друзья, наша главная задача - помочь вам сэкономить деньги. Если вы совершили покупку через <a href="http://cash4brands.ru/">cash4brands.ru</a>, но по какой-то причине не получили кэшбэк, пожалуйста, сообщите нам об этом по адресу <a href="mailto:info.cash4brands.ru@gmail.com">info.cash4brands.ru@gmail.com</a> и укажите в письме данные о покупке (дата и время, сумма и номер заказа). Пожалуйста, имейте ввиду, что по некоторым покупкам время ожидания начисления в аккаунт <a href="http://cash4brands.ru/">cash4brands.ru</a> может составлять до 2х недель.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title clearfix">
+                                    <div class="txt left">ВЫ ЗНАЕТЕ ПРОМОКОД ИЛИ КУПОН НА СКИДКУ?</div>
+                                    <div class="btn dashed_brd right">добавить промокод <span>></span></div>
+                                </div>
+                                <div class="text">
+                                    <div class="wrap">
+                                        <div class="close">Свернуть</div>
+                                        <div class="promo_title left">
+                                            Поделитесь им со всеми и получите 20 рублей! Просто впишите промокод здесь и он появится в комментариях. После проверки промокода, деньги будут добавлены в Ваш аккаунт
+                                        </div>
+                                        <form action="" method="" class="main_form form_promo left">
+                                            <label>Тип акции</label>
+                                            <div class="clear"></div>
+                                            <div class="field">
+                                                <div class="subs_input"></div>
+                                                <div class="for_select_box">
+                                                    <select class="input_element">
+                                                        <option>Промокод</option>
+                                                        <option>Промокод</option>
+                                                        <option>Промокод</option>
+                                                    </select>
+                                                </div>
+                                                <div class="arrow"></div>
+                                                <div class="error_label">Ошибка</div>
+                                            </div>
+
+                                            <label>Промокод</label>
+                                            <div class="clear"></div>
+                                            <div class="field">
+                                                <div class="subs_input"></div>
+                                                <input class="input_element" type="text" name="promo_code" placeholder="Промокод">
+                                                <div class="error_label">Ошибка</div>
+                                            </div>
+
+                                            <label>Описание<sup>*</sup></label>
+                                            <div class="clear"></div>
+                                            <textarea placeholder="Описание"></textarea>
+                                            <div class="error_label">Ошибка</div>
+
+
+                                            <label>Дата окончания/Без даты окончания</label>
+                                            <div class="clear"></div>
+                                            <div class="field">
+                                                <div class="subs_input"></div>
+                                                <div class="for_select_box">
+                                                    <select class="input_element">
+                                                        <option>Дата окончания акции</option>
+                                                        <option>Дата окончания акции</option>
+                                                        <option>Дата окончания акции</option>
+                                                        <option>Дата окончания акции</option>
+                                                    </select>
+                                                </div>
+                                                <div class="arrow"></div>
+                                                <div class="error_label">Ошибка</div>
+                                            </div>
+
+                                            <label>Дата окончания акции</label>
+                                            <div class="clear"></div>
+                                            <div class="field">
+                                                <div class="subs_input"></div>
+                                                <input class="promo_date_end input_element" type="text" name="promo_date">
+                                                <div class="error_label">Ошибка</div>
+                                            </div>
+
+                                            <label>Ваше имя<sup>*</sup></label>
+                                            <div class="clear"></div>
+                                            <div class="field">
+                                                <div class="subs_input"></div>
+                                                <input class="input_element" type="text" name="promo_name" placeholder="Ваше имя">
+                                                <div class="error_label">Ошибка</div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <input type="submit" value="Отправить" class="button_form">
+                                        </form>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="store_list_cupon">
+                        <li class="clearfix">
+                            <div class="left text_center">
+                                <a href="" class="image">
+                                    <img src="http://cash4brands.ru/media/offers/lamoda-cashback.jpg" />
+                                </a>
+                                <div class="cach_back">+ кэшбэк 5%</div>
+                            </div>
+                            <div class="left right_panel clearfix">
+                                <div class="title left"><a href="">SPARCO: СКИДКИ 30% + 10% ПО ПРОМОКОДУ!</a></div>
+                                <div class="promo right">
+                                    Промокод:
+                                    <div class="code"><span>не нужен</span></div>
+                                    <span class="lnk">скопировать</span>
+                                </div>
+                                <div class="clear indent_top_10"></div>
+                                <div class="left">
+                                    <div class="final_time left">Заканчивается: <span class="inf">20/02/2016</span></div>
+                                    <div class="clear"></div>
+                                    <div class="count_people left">Воспользовались: <span class="inf">11 человек</span></div>
+                                </div>
+                                <div class="right btn">Перейти на акцию ></div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="left text_center">
+                                <a href="" class="image">
+                                    <img src="http://cash4brands.ru/media/offers/lamoda-cashback.jpg" />
+                                </a>
+                                <div class="cach_back">+ кэшбэк 5%</div>
+                            </div>
+                            <div class="left right_panel clearfix">
+                                <div class="title left"><a href="">СКИДКА 10%!</a></div>
+                                <div class="promo right">
+                                    Промокод:
+                                    <div class="code"><span>AFF6269-A</span></div>
+                                    <span class="lnk" data-clipboard-action="copy" data-clipboard-text="AFF6269">скопировать</span>
+                                </div>
+                                <div class="clear indent_top_10"></div>
+                                <div class="left">
+                                    <div class="final_time left">Заканчивается: <span class="inf">20/02/2016</span></div>
+                                    <div class="clear"></div>
+                                    <div class="count_people left">Воспользовались: <span class="inf">11 человек</span></div>
+                                </div>
+                                <div class="right btn">Перейти на акцию ></div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="left text_center">
+                                <a href="" class="image">
+                                    <img src="http://cash4brands.ru/media/offers/lamoda-cashback.jpg" />
+                                </a>
+                            </div>
+                            <div class="left right_panel clearfix">
+                                <div class="title left">SPARCO: СКИДКИ 30% + 10% ПО ПРОМОКОДУ!</div>
+                                <div class="promo right">
+                                    Промокод:
+                                    <div class="code off"><span>не нужен</span></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+{% endblock %}

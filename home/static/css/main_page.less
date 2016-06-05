@@ -1,0 +1,326 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+/*main page*/
+.main_page{
+    width: 100%;
+    min-height: 1550px;
+    background: #f0f0f0 url(../img/main_page/background.jpg) no-repeat top center;
+   
+    .main_logo{ 
+        margin-top: 35px;
+        margin-left: 40px;
+    }
+    .main_switch_banner{
+        position: absolute;
+        top: 15px;
+        left: 110px;        
+    }
+    .main_page_header{ 
+        min-height: 750px; 
+
+        .search_field{
+            position: absolute;
+            top: 17px;
+            right: 40px;
+        }
+    }
+    
+    .main_page_login{
+        margin-top: 30px;
+        margin-left: 74px;
+
+        .main_page_auth,
+        .main_page_register{
+            display: inline-block;
+            position: relative;
+            height: 40px;
+            padding: 0 15px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px; 
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer; 
+            .animate_1second;
+            .bending;  
+            .cond_b;
+
+            span{
+                display: inline-block;
+                .cut;
+            }
+        }
+        .main_page_auth{
+            color: #4f5153;
+            background-color: #f4f5f5;
+
+            &:hover{
+                color: #ffffff;
+                background-color: #5B5D5F;
+            }
+        }
+        .main_page_register{
+            color: #ffffff;
+            background-color: #28a2d5;
+
+            &:hover{ background-color: #FF8900; }
+        }
+    }   
+    .main_page_slogan{
+        display: inline-block;
+        margin-left: 34px;
+        margin-top: 5px;
+        padding-left: 21px;
+        padding-bottom: 10px; 
+        background: url(../img/main_page/arrow_slogan.jpg) no-repeat 0 100%;
+        .segoeui;
+
+        .line_1{
+            color: #46484a;
+            font-size: 29px;  
+            text-transform: uppercase;          
+        }
+        .line_2{
+            margin-left: 33px;
+            color: #1e78b0;
+            font-size: 29px;
+            font-weight: 800;   
+            line-height: 30px;              
+            text-transform: uppercase;
+        }
+        .line_3{
+            margin-left: 55px;
+            margin-top: 10px;
+            color: #8b8b8b;
+            font-size: 25px;
+            letter-spacing: -1px;
+        }
+    }   
+    .purchase_step{           
+        list-style: none;    
+         
+        li{
+            .animate_1second;
+            &:hover {
+                .info{ opacity: 1;  }
+            
+                background-position-y: 0;
+            }
+        }        
+        .step_1{
+            width: 155px;
+            height: 96px;
+            margin-top: 99px;
+            margin-left: 50px;            
+            padding-left: 135px; 
+            cursor: pointer;
+            background: url(../img/main_page/bh_11.png) no-repeat 0 100%;
+            background-position-x: 0;           
+            
+            .title{ margin-top: 16px; }
+        }        
+        .step_2{
+            width: 164px;
+            height: 128px;
+            margin-top: 69px;
+            margin-left: 40px;
+            padding-left: 145px;
+            cursor: pointer;
+            background: url(../img/main_page/bh_12.png) no-repeat 0 100%;
+
+            .title{ margin-top: 36px; }
+        }
+        .step_3{
+            width: 159px;
+            height: 99px;
+            margin-top: 59px;
+            margin-left: 11px;
+            padding-left: 150px;
+            cursor: pointer;
+            background: url(/img/main_page/bh_13.png) no-repeat 0 100%;
+
+            .title{ margin-top: 16px; }
+        }
+        .title{           
+            color: #ffffff;  
+            font-size: 27px; 
+            line-height: .9; 
+            text-transform: uppercase;
+            .animate_1second;
+            .segoeui;
+        }
+        .info{ 
+            margin-top: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            opacity: 0; 
+            line-height: 1;
+            .animate_1second;
+            .cond_b;
+        }
+        .step_1:hover, .step_3:hover{
+            .title{
+                margin-top: 0px;
+                color: #ffeb00; 
+            }
+        }
+        .step_2:hover{ 
+            .title{
+                margin-top: 20px;
+                color: #ffeb00; 
+            }
+        }
+
+    }
+    .purchase_step li{ float: left; }
+    .switch_list_store{
+        display: inline-block;
+        position: relative;
+        height: 40px;
+        margin-top: 110px;
+        margin-left: 218px;
+        padding: 0 15px;
+        line-height: 40px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #7cb44d;
+        .animate_1second;
+        .bending;
+        .cond_b;
+
+        span{
+            display: inline-block;
+            .cut;
+        }
+
+        &:hover{ background-color: #639a35; }
+        &:before,
+        &:after{
+            position: absolute;        
+            width: 40px;
+            height: 40px;
+            left: 100%;
+            top: 0;
+            content: '';
+        }
+        &:before{ background-color: #7cb44d; }
+        &:after{ background: url(../img/arrow_white.png) no-repeat 50% 50%; }
+    }
+    
+    .advantage_count{
+        width: 360px;
+        margin-top: 87px;
+        margin-left: 40px;
+
+        .flipper{
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            .animate_1second;
+            .count,
+            .title{
+                line-height: 1.15;
+                .cond_b;
+            }
+            .count{ 
+                color: #b0e8ff; 
+                line-height: 65px; 
+            }
+            .title{   
+                display: inline-block;            
+                color: #ffffff;        
+                text-transform: uppercase;                  
+                .cut;
+            }
+
+            .front{ 
+                display: block; 
+
+                .count{ font-size: 70px; }
+                .title{
+                    font-size: 26px;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+            }
+            .back{ 
+                display: none;
+                transform: rotateY(180deg);
+
+                .count{ font-size: 62px; }
+                .title{
+                    font-size: 17px;
+                    margin-top: 18px;
+                    margin-right: 7px;
+                }
+            }
+            &:hover{
+                transform: rotateY(180deg);            
+            
+                .front{ display: none; }
+                .back{ display: block; }
+            }   
+        }
+            
+    }  
+    .advantage_present,
+    .advantage_video{
+        width: 144px;
+        height: 85px;        
+        padding-left: 100px;
+        cursor: pointer;       
+
+        .info{            
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1;     
+            .animate_1second;
+            .bending;
+            .cond_b;
+
+            .block {
+                display: inline-block;
+                margin-bottom: 8px;
+                padding: 10px;
+                color: #ffffff;
+                text-align: center;
+                text-transform: uppercase;                
+                background: #28a2d5;
+                .animate_1second;
+                
+            }
+        }
+    } 
+    .advantage_video{  
+        position: relative;
+        margin-top: 65px;
+        margin-left: 40px;                
+        background: url(../img/video.png) no-repeat top left;  
+        
+        .rolik{
+            position: absolute;
+            bottom: 100%;
+            left: 0;            
+            margin-left: -190px;
+            opacity: 0;
+        }
+    }
+    .advantage_present{ 
+        margin-top: 56px;
+        margin-left: 60px;
+        background: url(../img/present.png) no-repeat top left; 
+    }
+    .advantage_present:hover,
+    .advantage_video:hover{
+        .info{ color: #b0e8ff; }
+        .block {
+            color: #175d89;    
+            background: #ffffff;
+        }
+    }
+}

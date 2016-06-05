@@ -1,0 +1,146 @@
+﻿{% load staticfiles %}
+
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/eraser.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.min.css' %}" />
+    <link rel="stylesheet/less" type="text/css" href="{% static 'css/style.less' %}" />
+    <link rel="stylesheet/less" type="text/css" href="{% static 'css/store_about.less' %}" />
+    <link rel="stylesheet/less" type="text/css" href="{% static 'css/store_list_cupon.less' %}" />
+    {% block css %}{% endblock %}
+    <script type="text/javascript" src="{% static 'js/less.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-1.12.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/clipboard.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/store_about_rule.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/cupon.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    {% block javascript %}{% endblock %}
+</head>
+<body>
+
+    <div class="cupons_block">
+        <div class="wrapper">
+            <div class="content"></div>
+            <a href="" class="close">свернуть баннер >></a>
+        </div>
+    </div>
+    <div class="main_content">
+        <div class="middle_content">
+            <div class="register_header">
+                <div class="user_panel">
+                    <div class="wrapper clearfix">
+                        <ul class="top_menu left">
+                            <li><a href="">Как это работает</a></li>
+                            <li><a href="">Помощь</a></li>
+                            <li><a href="">Отзывы</a></li>
+                            <li><a href="">Приведи друга</a></li>
+                            <li><a href="">Блог</a></li>
+                        </ul>
+                        <div class="user_info right clearfix">
+                            <div class="balans left">
+                                <a href="" class="lnk">Баланс: 0 <span class="rub">р</span></a>
+                                <div class="balans_tooltip">Текущий баланс - 0 р.<br />из них Доступно для заказа - 0 р.<br/>и в Ожидание оплаты от магазина - 0 р.</div>
+                            </div>
+                            <div class="user_menu left">
+                                <div class="user_menu_title"><span class="dotted">Аккаунт №58644</span></div>
+                                <ul class="list">
+                                    <li><div class="user_menu_title"><span class="dotted">Аккаунт №58644</span></div></li>
+                                    <li><a href="">Мой профиль</a></li>
+                                    <li><a href="">Приведи друга</a></li>
+                                    <li><a href="">История покупок</a></li>
+                                    <li><a href="">Получить деньги</a></li>
+                                    <li><a href="">Выход</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main_switch_banner hidden right">Промокоды</div>
+                    </div>
+                </div>
+                <div class="header_panel">
+                    <div class="wrapper clearfix">
+                        <a href="/" class="main_logo left"></a>
+                        <form method="get" action="" class="search_field search_field_full left">
+                            <div class="search_back"></div>
+                            <input type="text" class="input" autocomplete="off" name="squery" placeholder="Например, Aliexpress">
+                            <input type="submit" class="submit" value="">
+                            <div class="search_stub"><span>Найти магазин</span></div>
+                            <ul class="autocompl_block hidden">
+                                <li><a href="">Aliexpress</a></li>
+                                <li><a href="">Aliexpress</a></li>
+                                <li><a href="">Aliexpress</a></li>
+                                <li><a href="">Aliexpress</a></li>
+                                <li><a href="" class="show_all">Ещё</a></li>
+                            </ul>
+                        </form>
+                        <a href="" class="gift right">
+                            <span class="hover"></span>
+                        </a>
+                        <a href="" class="video right" data-open-modal="video">
+                            <span class="hover"></span>
+                        </a>
+                        <div class="clear"></div>
+                        <ul class="bread_crumbs">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="" class="active">Каталог магазинов</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+{% block content %}{% endblock %}
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <ul class="footer_menu">
+                <li><a href=""><span class="arrow"></span>Как работает кэшбэк-сервис?</a></li>
+                <li><a href=""><span class="arrow"></span>Условия пользования</a></li>
+                <li><a href=""><span class="arrow"></span>Бонусная программа</a></li>
+                <li><a href=""><span class="arrow"></span>Контактная информация</a></li>
+                <li><a href=""><span class="arrow"></span>Часто задаваемые вопросы</a></li>
+                <li><a href=""><span class="arrow"></span>Отзывы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back_modal hidden video_modal" data-modal="video">
+        <div class="modal_window" style="width: 560px; height: 315px;">
+            <div class="modal_body">
+                <a href="" class="close" data-modal-close="video"></a>
+                <iframe width="560" height="315" src="http://www.youtube.com/embed/I_SphnjTNEY" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="back_modal" data-modal="add_block">
+        <div class="modal_window" style="width: 800px; height: 280px;">
+            <div class="modal_body">
+                <div class="add_block">
+                    <a href="" class="close" data-modal-close="add_block"></a>
+                    <p class="cut">
+                        Данное сообщение появилось в результате невозможности поставить вам файл cookie. Это может вызвать проблемы с работой сайта, в частности с возвратом денег за ваши покупки и снижения стоимости при использовании купонов.
+                    </p>
+                    <p class="cut">
+                        Скорее всего данная ошибка вызвана тем, что у Вас установлен AdBlock и он блокирует наши домены, поэтому вам нужно <a href=" abp:subscribe?location=http://cash4brands.ru/static/adblock.txt&amp;title=Cash4Brands">добавить наш сайт в белый список</a>добавить наш сайт в белый список или отключить AdBlock
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

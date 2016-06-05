@@ -1,0 +1,51 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+/*store list*/
+.store_list{
+    list-style: none;
+    margin: 10px 0;
+
+    li{
+        position: relative;
+        padding-left: 20px;
+        line-height: 30px;
+
+        &:before{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 5px;
+            height: 8px; 
+            margin-top: -2px;           
+            content: '';
+            background: #FF8900;
+            .cut;
+        }
+        a{
+            color: #2a2f33;
+            font-size: 14px;
+            text-decoration: none;
+            .open_sans;
+             
+            .name{ text-decoration: underline; }
+            .count{
+                color: #1e78b0;
+                text-decoration: underline;
+                .open_sans_bold;
+            }
+            &:hover{
+                .name{ 
+                    color: #1e78b0;
+                    .open_sans_bold;
+                }
+            }
+        }   
+        .active{
+            .name{ 
+                color: #1e78b0;
+                .open_sans_bold;
+            }
+        }
+    } 
+}

@@ -1,0 +1,47 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.help_list {
+    list-style: none;
+    width: 970px;
+    margin: 0 auto;
+    background: url(../img/faq.png) no-repeat 100% 50px;
+
+    >li {
+        width: 730px;
+        margin-bottom: 15px;
+
+        .quest {
+            color: #006EA9;
+            cursor: pointer;
+            display: inline;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Tahoma;
+            text-decoration: none;
+        }
+
+        .answer {
+            width: 670px;
+            min-height: 50px;
+            margin-left: 20px;
+            margin-top: 18px;
+            padding: 5px 10px 10px;
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial;
+            line-height: 1.5;
+            border: 2px solid #C7E0EC;
+            .get_border_radius(8px);
+            .tit{
+                color: #006ea9;
+                font-size: 1.17em;
+                font-weight: bold;
+            }
+
+            .middle_list {
+                list-style: none;
+            }
+        }
+    }
+}

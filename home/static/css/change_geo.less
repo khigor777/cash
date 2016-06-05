@@ -1,0 +1,178 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+/*city modal*/
+.change_city{
+    position: relative;
+    padding: 20px;
+    text-align: left;
+
+    .ttl{
+        margin: 5px 0;
+        color: #000000;
+        font-size: 18px;
+        text-align: left;
+        .open_sans_bold;    
+    }
+
+    .alfbt{
+        list-style: none;
+        text-align: left;
+        overflow: hidden;
+
+        li{
+            float: left;
+            margin: 0 10px 0 0;
+
+            a{
+                color: #1E78B0;
+                font-size: 17px; 
+                line-height: 1.2;                 
+                text-transform: uppercase;
+                text-decoration: none;  
+                .open_sans; 
+
+                &:hover{
+                    text-decoration: underline;    
+                } 
+            }
+        }
+    }
+
+    .list_result{
+        position: relative;
+        height: 320px;
+        margin-top: 10px; 
+        overflow-x: auto;
+
+        .simbol{
+            color: #1E78B0;
+            font-size: 24px;
+            float: left;
+            text-transform: uppercase;
+            .open_sans;       
+        }
+
+        ul{
+            margin-bottom: 10px;
+            list-style: none; 
+            float: left;   
+
+            li{                
+                float: left;
+                margin: 0 10px 0 0;
+                text-align: left; 
+                line-height: 1;              
+                
+                a{
+                    width: 138px;
+                    display: inline-block;
+                    color: #464646;
+                    font-size: 13px;
+                    line-height: 1;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    .open_sans;    
+
+                    &:hover{
+                        text-decoration: underline;    
+                    }
+                }    
+            }
+        }    
+    }
+
+    .block_list{
+        width: 400px;
+        margin-right: 20px;
+
+        .alfbt{
+
+            li{
+                margin: 0 4px 0 0;       
+            }
+
+            a{
+                font-size: 13px;    
+            }
+        }   
+        
+        .list_result {
+            a{
+                width: 180px;    
+            }    
+        } 
+    }
+
+    .lnk_back{
+        position: relative;
+        display: inline-block;
+        padding: 0 15px 0 15px;
+        color: #ffffff;
+        font-size: 14px;  
+        line-height: 20px;      
+        text-decoration: none;
+        background: #7cb44d;
+        .open_sans;
+        
+        &:before{
+            position: absolute;
+            top: 0;
+            left: -8px;
+            width: 0;
+            height: 0;            
+            content: '';
+            border-style: solid;
+            border-width: 10px 8px 10px 0;
+            border-color: transparent #7cb44d transparent transparent;
+        } 
+        
+        &:hover{
+            background: #639a35;    
+        } 
+        
+        &:hover:before{
+            border-color: transparent #639a35 transparent transparent;
+        }   
+    }
+
+    .set_point{
+        margin-top: 25px;
+        color: #616161;
+        font-size: 14px;
+        line-height: 39px;
+        .open_sans;    
+    }
+
+    .btn_set_point{
+        margin: 30px 20px 0 40px;
+        padding: 0 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+        text-decoration: none;
+        background: #7cb44d;
+        .cut;
+    }
+
+    .active_block{
+        width: 100%;
+        margin: 0;  
+        
+        .alfbt{        
+            li{
+                a{
+                    font-size: 17px; 
+                }
+            }
+        }
+
+        .list_result {
+            a{
+                width: 138px;  
+            }    
+        }   
+    }
+}

@@ -1,0 +1,170 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.main_page_title{
+    font-size: 30px;
+}
+.catalog_store {
+    width: 592px;
+    margin-top: 23px;
+    margin-right: 63px;
+    padding-bottom: 30px;
+    border: 1px solid #cbcbcb;
+    background: #ffffff;
+
+    .catalog_store_title {
+        color: #464646;
+        font-size: 16px;
+        margin: 17px 20px 0;
+        .open_sans_bold;
+    }
+
+    .catalog_store_txt {
+        font-family: 'Open Sans';
+        color: #464646;
+        font-size: 14px;
+        margin: 7px 20px 20px;
+        .open_sans;
+
+        b {
+            .open_sans_bold;
+        }
+    }
+
+    .other_cntr {
+        width: 420px;
+    }
+
+    .all_store {
+        padding: 10px 20px;
+        border-top: 1px solid #cbcbcb;
+        border-bottom: 1px solid #cbcbcb;
+
+        a {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-bottom: 1px dashed #7cb44d;
+            .open_sans_ibold;
+        }
+
+            a.active {
+                color: #1e78b0;
+                border: none;
+                font-style: normal;
+                .open_sans_bold;
+            }
+    }
+
+    .hdr_instr {
+        margin: 20px;
+        padding-left: 26px;
+        color: #000000;
+        background: url(../img/heart.png) no-repeat 0 2px;
+    }
+
+    .catalog_letter {
+        position: relative;
+        width: 524px;
+        margin: 30px 0 10px 4px;
+        padding: 0 30px;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 39px;
+        text-transform: uppercase;
+        background: #FF8800;
+        cursor: pointer;
+        .cut;
+        .cond_b;
+
+        .lnk {
+            display: none;
+            position: absolute;
+            width: 300px;
+            height: 49px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            .recut;
+
+            .item {
+                display: inline-block;
+                margin-left: 60px;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: Arial;
+                line-height: 49px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:hover {
+            .lnk {
+                display: block;
+            }
+        }
+    }
+
+    .catalog_list {
+        list-style: none;
+
+        li {
+            display: table;
+            width: 235px;
+            margin: 0 30px;
+            float: left;
+            border-bottom: 1px dashed #7cb44d;
+        }
+
+        .item {
+            height: 49px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .hrd {
+            display: block;
+            width: 20px;
+            height: 16px;
+            background: url(../img/heart.png) no-repeat 0 50%;
+
+            &:hover {
+                background: url(../img/favorite.png) no-repeat 0 50%;
+            }
+        }
+
+        .favorite {
+            background: url(../img/favorite.png) no-repeat 0 50%;
+        }
+
+        .name {
+            display: block;
+            width: 123px;
+            padding: 0 5px 0 15px;
+            color: #464646;
+            font-size: 14px;
+            .open_sans_bold;
+        }
+
+        .proc {
+            width: 70px;
+            color: #ff5100;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: underline;
+            .open_sans;
+        }
+    }
+}

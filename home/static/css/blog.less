@@ -1,0 +1,191 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.indent_top_30 { margin-top: 35px !important; }
+.title_blog{
+    margin-top: 10px;
+    color: #1e78b0;
+    font-size: 26px;
+    line-height: 1.2;
+    .cond_b;
+    .cut;
+    a{
+        color: #1e78b0;
+        text-decoration: none;
+    }
+}
+.left_column_bl{
+    width: 740px;
+    .title_blog{ margin-left: 8px; }    
+    .full{
+        background: #ffffff;
+    }
+    .item_bl{
+        margin-top: 30px;
+        border: 1px solid #cbcbcb;
+        overflow: hidden;
+        .image{
+            display: block;
+            position: relative;
+            width: 335px;
+            height: 211px;
+            margin-bottom: 20px;
+            background: #ffffff;
+            border-right: 1px solid #cbcbcb;
+            border-bottom: 1px solid #cbcbcb;
+            img{
+                position: absolute;
+                max-width: 335px;
+                max-height: 211px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        .info{
+            width: 402px;  
+            .title_blog{ margin-left: 20px; }          
+            .text{
+                margin: 10px;
+                margin-left: 20px;
+                font-size: 15px;
+                .open_sans;
+            }
+            .learn_more{
+                display: inline-block;
+                padding: 0 20px;
+                margin-top: 10px;
+                margin-right: 30px;
+                margin-bottom: 15px;
+                color: #ffffff;
+                font-size: 15px;
+                line-height: 37px;
+                text-transform: uppercase;
+                text-decoration: none;
+                background: #FD8A00;
+                .cond_b;
+                .cut;
+            }
+        }
+        .info_btm_pnl{
+            padding: 14px 7px 5px;
+            border-top: 1px solid #cbcbcb;   
+        }
+        .date, .count{  
+            margin-right: 10px;                      
+            color: #1e1e1e;
+            font-size: 12px;               
+            background: url( ../img/cupon_ico.png) no-repeat;
+            .open_sans_bold;
+        }
+        .date{ 
+            padding-left: 20px;
+            background-position: 0 2px; 
+        }
+        .count{ 
+            padding-left: 15px;
+            background-position: 0 -16px; 
+        }       
+    }
+    .descr{
+        h2{
+            margin: 50px 20px 30px;
+            color: #000000;
+            font-size: 34px;
+            .open_sans_bold;
+        }
+        h3{
+            margin: 10px 20px;
+            color: #000000;
+            font-size: 20px;
+            .open_sans_bold;
+        }
+        p{
+            margin: 20px;
+            color: #000000;
+            font-size: 18px;
+            .open_sans_italic;
+        }
+    }
+}
+.right_column_bl{
+    width: 260px;
+
+    .title_blog{ 
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+    .boll_brdr{
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        background: url(../img/rightbottom.png) repeat-x 0 0;
+    }
+    .text{
+        margin-top: 16px;
+        color: #000000;
+        font-size: 14px;
+        .open_sans;
+    }
+    .lnk{
+        display: inline-block;
+        font-size: 14px;
+        color: #000000;
+        line-height: 30px;
+        .open_sans;
+    }
+}
+.full_blg_info{
+    background: #ffffff;
+    td{ 
+        border-collapse: collapse;
+        border-bottom: 1px solid #cbcbcb; 
+    }
+    .full_blg_info_image{
+        vertical-align: middle; 
+        border-right: 1px solid #cbcbcb;
+
+        img{ max-width: 335px; }  
+    }
+    .title_elem{ 
+        vertical-align: top;
+        padding-left: 10px;
+    }
+    .info_elem{
+        vertical-align: bottom;
+        padding-left: 5px;
+
+        .info_btm_pnl{ border-top: none; }
+    }
+}
+.tag{
+    display: inline-block;
+    float: left;
+    margin-top: 7px;
+    margin-right: 7px;
+    padding-left: 22px;
+    padding-right: 5px;
+    color: #616161;
+    font-size: 12px;      
+    line-height: 20px;          
+    border: 1px solid #dedede;
+    background: #ffffff;
+    text-decoration: none;
+    background: #ffffff url( ../img/tag.png) no-repeat 4px 50%;
+    .open_sans;
+    .get_border_radius(4px);
+}
+
+.show_more{
+    width: 740px;
+    margin-top: 20px;
+
+    &:before{
+        border-width: 30px 740px 0 0;
+    }
+    &:after{
+        width: 740px;
+    }
+}

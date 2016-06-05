@@ -1,0 +1,118 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.hwrk_wrapper {
+    width: 970px;
+    margin: 30px auto 0;
+    font-family: Tahoma;
+
+    .hwrk_title {
+        color: #28516F;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 37px;
+    }
+
+    .hwrk_text {
+        color: #28516F;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .hwrk_step {
+        list-style: none;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        li {
+            margin-top: 20px;
+            width: 200px;
+            float: left;
+            color: #28516F;
+            font-size: 14px;
+            text-align: center;
+
+            &:nth-child(2) {
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 40px;
+    }
+
+    .hwrk_pay {
+        width: 640px;
+        margin-top: 50px;
+    }
+
+    .pay_list {
+        margin: 60px 0;
+
+        .pay_list_item {
+            display: inline-block;
+            padding-top: 80px;
+            color: #000000;
+            font-family: Tahoma;
+            font-size: 15px;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+
+        .phone_green .pay_list_item {
+            background: url(../img/hwrk/tel.png) no-repeat 13px 0;
+        }
+
+        .webmoney .pay_list_item {
+            width: 80px;
+            background: url(../img/hwrk/webmoney.png) no-repeat 13px 0;
+        }
+
+        .qiwi .pay_list_item {
+            width: 60px;
+            background: url(../img/hwrk/qiwi.png) no-repeat 0 0;
+        }
+
+        .yandex .pay_list_item {
+            width: 90px;
+            background: url(../img/hwrk/yandex.png) no-repeat 13px 0;
+        }
+
+        .master .pay_list_item {
+            width: 100px;
+            background: url(../img/hwrk/mastercard.png) no-repeat 0 0;
+        }
+
+        .visa .pay_list_item {
+            width: 100px;
+            background: url(../img/hwrk/visa.png) no-repeat 0 0;
+        }
+
+        .paypal .pay_list_item {
+            width: 80px;
+            background: url(../img/hwrk/paypal.png) no-repeat 13px 0;
+        }
+
+        li {
+            margin-right: 30px;
+        }
+    }
+
+    .form_promo {
+        margin: 30px 0;
+        label{
+            font-size: 16px;
+        }
+    }
+
+    .indent_top {
+        margin-top: 60px;
+    }
+}

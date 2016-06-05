@@ -1,0 +1,98 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+.category_list{
+    margin-top: 40px;
+    list-style: none;
+
+    >li{
+        position: relative;
+        margin: 7px 0; 
+        padding-left: 20px;
+
+        >a{
+            display: inline-block;
+            position: relative;
+            color: #2a2f33;
+            font-size: 14px;
+            text-transform: uppercase;
+            .open_sans_bold;
+
+            &:hover{ 
+                color: #1e78b0;
+                text-decoration: underline;
+            }
+        }
+        
+    }    
+    >li:before{
+        position: absolute;
+        top: 4px;
+        left: 3px;
+        width: 7px;
+        height: 13px;
+        content: '';
+        background: #FF8900;
+        .cut;
+    }
+    .active{
+        margin-top: 15px;
+        padding-left: 10px;
+        >a{ 
+            padding: 4px 10px;
+            text-decoration: none;
+            &:hover{ 
+                color: #2a2f33; 
+                text-decoration: none;
+            }
+            &:before{
+                position: absolute;
+                left: -10px;
+                top: -4px;  
+                width: 100%;
+                height: 100%;
+                padding: 4px 10px;                         
+                content: '';
+                background: #1e5799;
+                background: #1e5799;
+                background: -moz-linear-gradient(45deg,  #1e5799 0%, #9ed970 0%, #b8e591 18%, #b8e591 100%);
+                background: -webkit-linear-gradient(45deg,  #1e5799 0%,#9ed970 0%,#b8e591 18%,#b8e591 100%);
+                background: linear-gradient(45deg,  #1e5799 0%,#9ed970 0%,#b8e591 18%,#b8e591 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#b8e591',GradientType=1 );
+                z-index: -1;        
+                .cut;
+            } 
+        }        
+        &:before{ display: none; }
+    }
+    .favorite{ 
+        background: url(../img/favorite.png) no-repeat 0 4px; 
+        background-size: 17px;
+    }   
+    .store{ 
+        margin-bottom: 30px;
+        background: url(../img/store.png) no-repeat 0 1px;
+
+        
+    } 
+    .favorite:before,
+    .store:before{ display: none; }
+    .sub_menu{
+        margin: 15px 0 15px 20px;
+        list-style: none;
+
+        li{
+            margin: 5px 0;
+            a{
+                color: #216895;
+                font-size: 14px;
+                .open_sans;
+
+                &:hover{ 
+                    color: #000000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
+<script src="{% static 'js/settings.js' %}"></script>
+
+<div>
+<form method="post">
+    {% csrf_token %}
+<input id="{{ text.name }}_title" type="text" name="title" value="{{ text.title }}">
+<textarea id="{{ text.name }}_area" name="{{ text.name }}_area">{{ text.body }}</textarea>
+<input type="button" id="{{ text.name }}_btn" value="Сохранить"></input>
+<span id="{{ text.name }}_res"></span>
+    </form>
+</div>
+
+        <script>
+            CKEDITOR.replace( '{{ text.name }}_area');
+
+        </script>
+
+<script>
+    $(function(){
+        $("#{{ text.name }}_btn").on('click', function(){
+            var value = CKEDITOR.instances['{{ text.name }}_area'].getData();
+            $.post('/side_editor',{
+                'name':'{{ text.name }}',
+                'title':$('#{{ text.name }}_title').val(),
+                'body':$(value).text(),
+                'csrfmiddlewaretoken':$( '#csrfmiddlewaretoken' ).val()},
+                    function(data){
+                    $('#{{ text.name }}_res').html('Данные успешно сохранены.')
+             })
+        });
+    });
+
+</script>

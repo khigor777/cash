@@ -1,0 +1,37 @@
+﻿.cut{
+    -moz-transform: skew(-12deg, 0);
+    -o-transform: skew(-12deg, 0);
+    -webkit-transform: skew(-12deg, 0);
+    transform: skew(-12deg, 0);
+    -ms-transform: skew(-12deg, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.2125565616700213, M21=0, M22=1, SizingMethod='auto expand')";
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.2125565616700213, M21=0, M22=1, SizingMethod='auto expand');
+}
+.recut{
+    -moz-transform: skew(12deg, 0);
+    -o-transform: skew(12deg, 0);
+    -webkit-transform: skew(12deg, 0);
+    transform: skew(12deg, 0);
+    -ms-transform: skew(12deg, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.2125565616700213, M21=0, M22=1, SizingMethod='auto expand')";
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.2125565616700213, M21=0, M22=1, SizingMethod='auto expand');
+                
+}
+.bending{
+    -moz-transform: skew(0, -3.5deg); 
+    -ms-transform: skew(0, -3.5deg);
+    -webkit-transform: skew(0, -3.5deg); 
+    -o-transform: skew(0, -3.5deg); 
+    transform: skew(0, -3.5deg);
+}
+.animate_1second{
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s; 
+    transition: 1.5s;
+}
+.get_border_radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}

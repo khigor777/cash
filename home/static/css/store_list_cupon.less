@@ -1,0 +1,177 @@
+﻿@import "fonts.less";
+@import "general.less";
+
+/*store cupons*/
+.store_list_cupon{
+    position: relative;
+    width: 704px;
+    list-style: none;  
+
+    li{
+        position: relative;
+        padding: 20px;
+        margin-bottom: 22px;
+        border: 1px solid #dfdfdf;
+        background: #ffffff;
+
+        .right_panel{ 
+            position: relative;
+            width: 450px;
+        }        
+        &:before{
+            position: absolute;
+            width: 1px;
+            height: 98%;
+            top: 1px;
+            left: 230px;
+            content: '';
+            background: url(../img/cupon_line.png) repeat-y 0 0;
+        }
+
+        .image{
+            position: relative;
+            display: block;
+            width: 190px;
+            height: 80px;
+            margin-right: 20px;
+
+            img{
+                position: absolute;
+                max-width: 190px;
+                max-height: 80px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }            
+        }    
+        .cach_back{
+            display: inline-block;
+            width: 160px;
+            padding: 5px 0;
+            margin-left: -10px;
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            background: #FF8900;
+            cursor: pointer;
+            .animate_1second;
+            .cut;
+            .cond_b;
+        }    
+        .title{
+            width: 290px;
+            margin-top: 10px;
+            margin-left: 20px; 
+            color: #616161;
+            font-size: 16px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            .open_sans_bold;
+                
+            a{
+                color: #ED5500;
+                text-transform: uppercase;
+                text-decoration: none;
+            }                       
+        }
+        .promo{
+            width: 120px;
+            right: 20px;
+            color: #616161;
+            font-size: 12px;
+            text-align: center;
+            .open_sans;  
+
+            .code{
+                margin-top: 5px;
+                padding: 5px 0;
+                color: #ed5500;
+                font-size: 16px;
+                text-transform: uppercase;
+                background: #FEEEE5;
+                .cut;
+                .open_sans_bold;
+
+                span{
+                    display: inline-block;
+                    .recut;
+                }
+                &.off{ color: #616161; }
+            }
+            .lnk{
+                color: #3378b0;
+                text-decoration: underline;
+                cursor: pointer;
+                .open_sans_bold;
+            }
+        }     
+        .final_time,
+        .count_people{       
+            margin-left: 20px;            
+            padding-left: 20px;
+            color: #1e1e1e;
+            font-size: 12px;
+            background: url(../img/cupon_ico.png) no-repeat;
+            .open_sans;
+
+            .inf{
+                color: #519e2b;
+                .open_sans_bold;
+            }
+        }   
+        .final_time{ 
+            margin-top: 20px;
+            background-position: 0 3px; 
+        }
+        .count_people{ background-position: 0 -16px; }
+        .all_pupons{
+            position: relative;
+            margin-top: 5px;
+            margin-left: 20px;  
+            padding-left: 10px;
+            font-size: 14px;
+            .open_sans;
+
+            &:before{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 5px;
+                height: 8px;
+                content: '';
+                background: #FF8900;   
+                .cut; 
+            }
+            .name{
+                color: #2a2f33;
+                text-decoration: underline; 
+            }
+            .count{
+                color: #1e78b0;
+                text-decoration: underline;   
+                .open_sans_bold; 
+            }
+        }
+        .btn{
+            position: absolute;
+            display: inline-block;
+            bottom: 0;
+            right: 0;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            background: #62B439;
+            cursor: pointer;
+            .animate_1second;
+            .cut;
+            .open_sans_bold;
+
+            &:hover{ background: #ED5500; }
+        }
+    }
+}
