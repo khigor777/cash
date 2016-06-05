@@ -15,5 +15,5 @@ def side_editor(request):
         html = Html.objects.get(name=name)
         html.title = title
         html.body = body
-        result = html.save()
-        return HttpResponse(result)
+        html.save()
+        return HttpResponse('ok')

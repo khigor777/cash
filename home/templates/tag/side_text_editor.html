@@ -27,7 +27,13 @@
                 'body':$(value).text(),
                 'csrfmiddlewaretoken':$( '#csrfmiddlewaretoken' ).val()},
                     function(data){
-                    $('#{{ text.name }}_res').html('Данные успешно сохранены.')
+                        $('#{{ text.name }}_res').html('');
+                        if (data=='ok'){
+                            $('#{{ text.name }}_res').html('Данные успешно сохранены.');
+                        }else{
+                            $('#{{ text.name }}_res').html('Ошибка сохранения.');
+                        }
+
              })
         });
     });
