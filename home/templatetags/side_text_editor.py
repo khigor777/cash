@@ -11,3 +11,11 @@ def show_editor(table_name, row, id, value):
 @register.filter(name='get_class')
 def get_class(value):
     return value.__class__.__name__
+
+
+@register.filter(name='get_attribute')
+def get_attribute(value):
+    val = value.split('.')
+    if isinstance(val, list):
+        return val[-1]
+    return value

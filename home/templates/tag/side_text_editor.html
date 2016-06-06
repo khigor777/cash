@@ -25,9 +25,9 @@
 
 <script>
     $(function(){
-        $("#edit_href_{{ data.id }}").on('click', function(){
+           $("#edit_href_{{ data.id }}").on('click', function(){
            $("#edit_{{ data.id }}").toggle()
-            $("#show_{{ data.id }}").toggle()
+           $("#show_{{ data.id }}").toggle()
         });
         $("#btn_{{ data.id }}").on('click', function(){
             var value = CKEDITOR.instances['area_{{ data.id }}'].getData();

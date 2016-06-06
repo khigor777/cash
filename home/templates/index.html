@@ -60,8 +60,7 @@
 
                     {% for item in left_side_texts %}
                         <h4 class="store_descr_title">{{ item.title }}</h4>
-                        {% show_editor table_name=item|get_class row='body' id=item.id value=item.body  %}
-
+                        {% show_editor table_name=item|get_class row='item.body'|get_attribute id=item.id value=item.body  %}
                     {% endfor %}
 
 
