@@ -55,12 +55,18 @@
                     </table>
                     <a href="" class="store_more">Больше магазинов&gt;</a>
                     <div class="store_descr">
-<p>
-                        {% show_editor 'index_page_left_first' %}
-                  </p>
-<p>
-                        {% show_editor 'index_page_left_second' %}
-</p>
+
+
+
+                    {% for item in left_side_texts %}
+                        <h4 class="store_descr_title">{{ item.title }}</h4>
+                        {% show_editor table_name=item|get_class row='body' id=item.id value=item.body  %}
+
+                    {% endfor %}
+
+
+
+
                     </div>
                 </div>
                 <div class="left column_right">

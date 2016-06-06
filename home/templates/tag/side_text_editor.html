@@ -2,40 +2,51 @@
 <script src="//cdn.ckeditor.com/4.5.9/standard/ckeditor.js"></script>
 <script src="{% static 'js/settings.js' %}"></script>
 
-<div>
+<div id="edit_{{ data.id }}" style="display: none">
 <form method="post">
     {% csrf_token %}
-<input id="{{ text.name }}_title" type="text" name="title" value="{{ text.title }}">
-<textarea id="{{ text.name }}_area" name="{{ text.name }}_area">{{ text.body }}</textarea>
-<input type="button" id="{{ text.name }}_btn" value="Сохранить"></input>
-<span id="{{ text.name }}_res"></span>
+    <input id="id_{{ data.id }}" type="hidden" name="id" value="{{ data.id }}">
+    <input id="table_{{ data.id }}" type="hidden" name="table" value="{{ data.table_name }}">
+    <input id="row_{{ data.id }}" type="hidden" name="row" value="{{ data.row }}">
+    <textarea id="area_{{ data.id }}" name="area_{{ data.id }}">{{ data.value }}</textarea>
+    <input type="button" id="btn_{{ data.id }}" value="Сохранить"></input>
+    <span id="res_{{ data.id }}"></span>
     </form>
 </div>
+<div id="show_{{ data.id }}">
+    {{ data.value }}
+
+</div>
+ <a id="edit_href_{{ data.id }}" href="" onclick="return false"> Редактировать</a>
 
         <script>
-            CKEDITOR.replace( '{{ text.name }}_area');
-
+            CKEDITOR.replace( 'area_{{ data.id }}');
         </script>
 
 <script>
     $(function(){
-        $("#{{ text.name }}_btn").on('click', function(){
-            var value = CKEDITOR.instances['{{ text.name }}_area'].getData();
+        $("#edit_href_{{ data.id }}").on('click', function(){
+           $("#edit_{{ data.id }}").toggle()
+            $("#show_{{ data.id }}").toggle()
+        });
+        $("#btn_{{ data.id }}").on('click', function(){
+            var value = CKEDITOR.instances['area_{{ data.id }}'].getData();
             $.post('/side_editor',{
-                'name':'{{ text.name }}',
-                'title':$('#{{ text.name }}_title').val(),
-                'body':$(value).text(),
+                'id':$('#id_{{ data.id }}').val(),
+                'row':$('#row_{{ data.id }}').val(),
+                'table':$('#table_{{ data.id }}').val(),
+                'value':$(value).text(),
                 'csrfmiddlewaretoken':$( '#csrfmiddlewaretoken' ).val()},
                     function(data){
-                        $('#{{ text.name }}_res').html('');
+                        $('#res_{{ data.id }}').html('');
                         if (data=='ok'){
-                            $('#{{ text.name }}_res').html('Данные успешно сохранены.');
+                            $('#res_{{ data.id }}').html('Данные успешно сохранены.');
                         }else{
-                            $('#{{ text.name }}_res').html('Ошибка сохранения.');
+                            $('#res_{{ data.id }}').html('Ошибка сохранения.');
                         }
-
              })
         });
+
     });
 
 </script>
